@@ -14,3 +14,4 @@ cursor.execute("SELECT * FROM autores")
 cursor.execute("SELECT * FROM editoras")
 
 conn.close()
+
