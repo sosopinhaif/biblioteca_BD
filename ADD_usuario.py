@@ -6,7 +6,7 @@ cursor = conn.cursor()
 def adicionar_usuario():
     name = input("nome de usuario: ")
     
-    cursor.execute("INSERT INTO (nome) VALUES(?)", (name,))
+    cursor.execute("INSERT INTO usuarios(nome) VALUES(?)", (name,))
 
     conn.commit()
     print("ADD com sucesso!!!")
