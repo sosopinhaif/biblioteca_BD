@@ -3,6 +3,8 @@ from ADD_usuario import adicionar_usuario, liste_usuarios
 from ADD_autores import cadastro_autores, liste_autores
 from ADD_editoras import cadastro_editora, liste_Editoras
 from ADD_livros import cadastrar_livro, listar_livros
+from ADD_emprestimo import cadastro_emprestimo, listar_emprestimos
+from ADD_emprestimosdelivros import add_cadastro_de_livro
 
 while(True):
     print("")
@@ -18,6 +20,8 @@ while(True):
     print("8-LISTAR LIVROS")
     print("9-CADASTRAR EMPRESTIMO")
     print("10-LISTAR EMPRESTIMOS")
+    print("11- CADASTRAR O EMPRESTIMO DO SEU LIVRO")
+    print("12- SAIR")
     print("")
     
     opcao = input("qual opção vc escolhe? ")
@@ -45,3 +49,17 @@ while(True):
 
     elif opcao == "8":
         listar_livros()    
+
+    elif opcao == "9":
+        cadastro_emprestimo()    
+
+    elif opcao == "10":
+        listar_emprestimos()    
+
+    elif opcao == "11":
+        add_cadastro_de_livro()
+
+    elif opcao == "12":
+        break
+    else :
+        print("opcao indisponivel! ")        
