@@ -13,7 +13,7 @@ def cadastrar_autor():
 
     conn.commit()
 
-    print("Autor cadastrado com sucesso!")
+    print("Autor cadastrado com sucesso! ;-o")
 
 
 def listar_autores():
@@ -53,7 +53,7 @@ def cadastrar_livro():
 
     conn.commit()
 
-    print("Livro cadastrado com sucesso!")
+    print("Livro cadastrado com sucesso! :-D")
 def listar_livros():
 
     cursor.execute("""
