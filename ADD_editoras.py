@@ -6,14 +6,14 @@ cursor = conn.cursor()
 def cadastro_editora():
     name = input("qual é a editora? ")
 
-    cursor.execute("INSERT INTO editora(nome) VALUES(?)", (name,))
+    cursor.execute("INSERT INTO editoras(nome) VALUES(?)", (name,))
 
     conn.commit()
 
     print("editora cadastrada com sucesso!!;p")
 
 def liste_Editoras():
-    cursor.execute("SELECT * FROM editora")
+    cursor.execute("SELECT * FROM editoras")
     editoras = cursor.fetchall()
     if not editoras:
         print("nenhuma editora foi encontrada!;(")
